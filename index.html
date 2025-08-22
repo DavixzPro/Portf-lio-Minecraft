@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minecraft</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <button id="cliqueinicial" onclick="startintro()"></button>
+        <h1 id="enchanted-text">Clique para jogar</h1>
+        <div id="intro">
+            <video src="video/WhatsApp Video 2025-08-19 at 20.50.55.mp4.mp4" id="introvd" paused></video>
+        </div>
+        <div id="overlay"></div>
+        <div id="paginainicio">
+            <button id="conquistas" onclick="minhasconquistas()"><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/b/b0/Potion_of_Slow_Falling.gif?version=6baa08ba1d2047bbe437b6e1e116e123" alt="Poção" width="70px"></button>
+            <div id="menuinicial">
+            <img src="img/titulo.png" alt="Minecraft" width="800" id="minecraft">
+            <button onclick="escolherdimensao()" id="jogar">Jogar</button>
+            <button onclick="pqmine()">Opções</button>
+            <button id="marketplace">Marketplace</button>
+        </div>
+        <div id="personagem">
+            <h1 id="nome">Davi</h1>
+            <img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/archive/f/f3/20111016075014!Steve.png" alt="Steve" width="150px">
+            <button id="skin" onclick="paginasobremim()">Skin</button>
+        </div>
+        <div id="posicaomsc">
+            <button id="msc"><img src="img/download-removebg-preview.png" alt="Audio" width="60px" id="icon-musica"></button>
+        </div>
+        </div>
+            <div id="sobremim">
+                <img src="img/fotominha.jpeg" alt="Minha Foto" width="250px" id="minhafoto">
+                <h1 style="position: absolute; top: 1%;">Quem sou eu?</h1>
+                <p style="flex: 1;" id="txtsobremim">Eu me chamo Davi, tenho 16 anos e atualmente estudo no 1° ano do Ensino Médio no SESI. No meu tempo livre, costumo estudar, programar, montar cubo mágico ou praticar esportes, como futebol e vôlei.</p>
+                <h1 style="position: absolute; top: 38%;">Objetivos:</h1>
+                <ul style="position: absolute; top: 47%; text-align: left;">
+                    <li>Dominar um segundo idioma</li>
+                    <li>Passar no ENEM ou SSA</li>
+                    <li>Viajar pra fora do Brasil</li>
+                </ul>
+                <h1 style="position: absolute; top: 67%;">Qualidades:</h1>
+                <ul style="position: absolute; top: 77%; text-align: left;">
+                    <li>Calmo</li>
+                    <li>Criativo</li>
+                    <li>Comunicativo</li>
+                </ul>
+                <button id="botaovoltarsm" onclick="voltardosm()" class="return">Retornar</button>
+        </div>
+        <div id="minhasconquistas">
+            <h1>Minhas Conquistas:</h1>
+            <img src="img/aprovacaosesi.jpeg" alt="Aprovação no SESI" width="700px" style="box-shadow: 3px 3px rgba(0, 0, 0, 0.477);" class="zoom">
+            <img class="zoom" src="img/aprovacaoete.jpeg" alt="Aprovação no ETE" width="700px" style="margin-bottom: 100px; box-shadow: 3px 3px rgba(0, 0, 0, 0.432);">
+            <button id="botaovoltarc" onclick="voltardasc()" class="return">Retornar</button>
+        </div>
+        <div id="opcoes">
+            <h1>Por que "Minecraft"?</h1>
+            <div id="txtpqm">
+                <p class="quadradopreto" style="color: white;">1º Ano - Overworld<br>A fase da descoberta. Tudo é novo como um mundo recém-gerado: os primeiros amigos são como vilarejos NPCs que encontramos pelo caminho, as matérias iniciais são como ferramentas básicas de madeira - frágeis, mas essenciais. Aqui se aprende que até mesmo os erros (como tentar minerar diamante com picareta de pedra) fazem parte do processo.<br><br>2º Ano - Nether<br>O momento da intensidade. Assim como no reino infernal do Minecraft, tudo parece mais difícil: a pressão aumenta como a temperatura do Nether, os desafios exigem equipamentos melhores (organização e disciplina), e os recursos são mais escassos (tempo e energia). Mas é justamente aqui que encontramos os materiais mais valiosos para nosso crescimento.<br><br>3º Ano - The End<br>A aparente fase final. Derrotar o Ender Dragon simboliza vencer os últimos obstáculos antes da formatura. Mas assim como no jogo, onde após o The End descobrimos as Cidades do End e os elytras que nos permitem voar, o fim do ensino médio é na verdade um portal para novos começos. A vitória sobre o dragão não é o fim - é a chave que liberta o jogador para explorar mundos muito maiores.</p>
+            </div>
+            <button class="return" onclick="voltardopqm()">Retornar</button>
+        </div>
+        <div id="escolherdimensao">
+            <h1 style="text-align: center;">Selecione uma Dimensão:</h1>
+            <div class="quadradopreto">
+                <button id="d1" onclick="ativarfirst()" style="display: flex; justify-content: center; align-items: center;"><img src="img/portfolio 1.png" alt="Overworld" width="500px"></button>
+                <button id="d2" onclick="ativarsecond()" style="display: flex; justify-content: center; align-items: center;"><img src="img/GIF portfolio 2.gif" alt="Nether" width="500px"></button>
+                <button id="d3" onclick="ativarthird()" style="display: flex; justify-content: center; align-items: center;"><img src="img/GIF portfolio 3.gif" alt="The End" width="500px"></button>
+            </div>
+            <button onclick="voltardoed()" class="return">Retornar</button>
+        </div>
+        <div id="primeiroano">
+            <div id="intro1">
+                    <video src="video/introoverworld.mp4" id="introo" paused></video>
+                </div>
+            <div id="barrinhaprimeiroano">
+                <h4>Portfólio Minecraft - Davi Amaral 1°A - Versão Overworld</h4>
+                <button onclick="voltardopa()" class="return" id="voltardopa" ><</button>
+            </div>
+            <img src="img/portfoliooverworld.png" alt="Portfólio Overworld" width="600px" id="titleoverworld">
+            <img id="conteudo1" src="img/lupa.png" alt="Inventário" width="700px">    
+            <div id="midiach1">
+                    <img src="img/Atividades/maquetehist.jpeg" alt="Trabalho" width="200px" id="foto1ch-1" class="zoom" onmouseover="atv1ch1()" onmouseout="xatv1ch1()">
+                    <img src="img/Atividades/trabaidefilo.jpeg" alt="Trabalho" width="200px" id="foto2ch-1" class="zoom" onmouseover="atv2ch1()" onmouseout="xatv2ch1()">
+                    <img src="img/Atividades/ototrabaidefilo.jpeg" alt="Trabalho" width="200px" id="foto3ch-1" class="zoom" onmouseover="atv3ch1()" onmouseout="xatv3ch1()">
+                    <img src="img/Atividades/seminariodehist.jpeg" alt="Trabalho" width="200px" id="foto4ch-1" class="zoom" onmouseover="atv4ch1()" onmouseout="xatv4ch1()">
+                    <img src="img/Atividades/docspe.jpeg" alt="Trabalho" width="200px" id="foto5ch-1" class="zoom" onmouseover="atv5ch1()" onmouseout="xatv5ch1()">
+                    <img src="img/Atividades/trabalhohumano.jpeg" alt="Trabalho" width="200px" id="foto6ch-1" class="zoom" onmouseover="atv6ch1()" onmouseout="xatv6ch1()">
+
+                    <div class="quadradoconteudo" id="atv1ch1">
+                        <p id="quadradoconteudopartepreta">- Vale do Indo -<br><br>Nesta atividade, fizemos maquetes customizadas de civilizações antigas. Eu e meu grupo fizemos o Vale do Indo.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv2ch1">
+                        <p id="quadradoconteudopartepreta">-Trabalho de Filosofia-<br><br>Essa foi uma atividade onde tivemos que desenvolver, em sala, um mapa mental sobre os filósofos pré-socráticos.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv3ch1">
+                        <p id="quadradoconteudopartepreta">- Contratualistas -<br><br>Esta foi mas uma atividade sobre os filósofos, mas dessa vez, os Contratualistas.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv4ch1">
+                        <p id="quadradoconteudopartepreta">- Seminário -<br><br>Este foi o dia em que toda a sala apresentou o Seminário de História sobre a sociedade feudal.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv5ch1">
+                        <p id="quadradoconteudopartepreta">- Documentos -<br><br>Na referida data, apresentamos o trabalho sobre os documetos históricos de Pernambuco.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv6ch1">
+                        <p id="quadradoconteudopartepreta">- Mapa mental -<br><br>Nesta aula, o professor pediu para que fizéssemos um mapa mental sobre o trabalho humano.</p>
+                    </div>
+            </div>
+            <div id="midiacn1">
+                    <img src="img/Atividades/microscopio.jpeg" alt="Trabalho" width="200px" id="foto1cn-1" class="zoom" onmouseover="atv1cn1()" onmouseout="xatv1cn1()">
+                    <img src="img/Atividades/mtdc.jpeg" alt="Trabalho" width="200px" id="foto2cn-1" class="zoom" onmouseover="atv2cn1()" onmouseout="xatv2cn1()">
+                    <img src="img/Atividades/cel.animal.jpeg" alt="Trabalho" width="200px" id="foto3cn-1" class="zoom" onmouseover="atv3cn1()" onmouseout="xatv3cn1()">
+                    <img src="img/Atividades/cel.vegetal.jpeg" alt="Trabalho" width="200px" id="foto4cn-1" class="zoom" onmouseover="atv4cn1()" onmouseout="xatv4cn1()">
+                    <img src="img/Atividades/" alt="Trabalho" width="200px" id="foto5cn-1" class="zoom" onmouseover="atv5cn1()" onmouseout="xatv5cn1()">
+                    <img src="img/Atividades/" alt="Trabalho" width="200px" id="foto6cn-1" class="zoom" onmouseover="atv6cn1()" onmouseout="xatv6cn1()">
+                    <div class="quadradoconteudo" id="atv1cn1">
+                        <p id="quadradoconteudopartepreta">- Microscópio -<br><br>Esse foi o dia em que a professora Paula levou um microscópio para nossa sala.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv2cn1">
+                        <p id="quadradoconteudopartepreta">- Método Científico -<br><br>Nesta atividade, fizemos todas as etapas do método científico para aprender como ele funciona na prática</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv3cn1">
+                        <p id="quadradoconteudopartepreta">- Célula Animal -<br><br>Esse foi um Fanzine sobre a célula animal. Aprendemos suas partes e funções.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv4cn1">
+                        <p id="quadradoconteudopartepreta">- Célula Vegetal -<br><br>Este também foi um momento destinado à criação de um fanzine, mas dessa vez foi da célula vegetal.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv5cn1">
+                        <p id="quadradoconteudopartepreta">- Documentos -<br><br>Na referida data, apresentamos o trabalho sobre os documetos históricos de Pernambuco.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv6cn1">
+                        <p id="quadradoconteudopartepreta">- Mapa mental -<br><br>Nesta aula, o professor pediu para que fizéssemos um mapa mental sobre o trabalho humano.</p>
+                    </div>
+                </div>
+        <div id="midiamt1">
+                    <img src="img/Atividades/aulaquetsao.jpeg" alt="Trabalho" width="200px" id="foto1mt-1" class="zoom" onmouseover="atv1mt1()" onmouseout="xatv1mt1()">
+                    <img src="img/Atividades/aulafuncao2.jpeg" alt="Trabalho" width="200px" id="foto2mt-1" class="zoom" onmouseover="atv2mt1()" onmouseout="xatv2mt1()">
+                    <img src="img/Atividades/mmtriangulos.jpeg" alt="Trabalho" width="200px" id="foto3mt-1" class="zoom" onmouseover="atv3mt1()" onmouseout="xatv3mt1()">
+                    <img src="img/Atividades/piramidesarq.jpeg" alt="Trabalho" width="200px" id="foto4mt-1" class="zoom" onmouseover="atv4mt1()" onmouseout="xatv4mt1()">
+                    <img src="img/Atividades/" alt="Trabalho" width="200px" id="foto5mt-1" class="zoom" onmouseover="atv5mt1()" onmouseout="xatv5mt1()">
+                    <img src="img/Atividades/" alt="Trabalho" width="200px" id="foto6mt-1" class="zoom" onmouseover="atv6mt1()" onmouseout="xatv6mt1()">
+                    <div class="quadradoconteudo" id="atv1mt1">
+                        <p id="quadradoconteudopartepreta">- Questão OBMEP -<br><br>Esse foi o dia que eu e Wellyson resolvemos uma questão da OBMEP no quadro.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv2mt1">
+                        <p id="quadradoconteudopartepreta">- Aula de Função -<br><br>Nesta aula, o professor Assis pediu para que os alunos escolhessem um tema para dar uma breve aula sobre.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv3mt1">
+                        <p id="quadradoconteudopartepreta">- Triângulos -<br><br>Esse foi um mapa mental sobre os triângulos, suas classificações e principais propriedades.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv4mt1">
+                        <p id="quadradoconteudopartepreta">- Arquitetura -<br><br>Neste dia, apresentamos um trabalho sobre a arquitetura e como a geometria está inserida nela.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv5mt1">
+                        <p id="quadradoconteudopartepreta">- Documentos -<br><br>Na referida data, apresentamos o trabalho sobre os documetos históricos de Pernambuco.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv6mt1">
+                        <p id="quadradoconteudopartepreta">- Mapa mental -<br><br>Nesta aula, o professor pediu para que fizéssemos um mapa mental sobre o trabalho humano.</p>
+                    </div>
+            </div>
+        <div id="midialg1">
+                    <img src="img/Atividades/carnavalsesi.jpeg" alt="Trabalho" width="200px" id="foto1lg-1" class="zoom" onmouseover="atv1lg1()" onmouseout="xatv1lg1()">
+                    <img src="img/Atividades/jurisimulado.jpeg" alt="Trabalho" width="200px" id="foto2lg-1" class="zoom" onmouseover="atv2lg1()" onmouseout="xatv2lg1()">
+                    <img src="img/Atividades/memes.jpeg" alt="Trabalho" width="200px" id="foto3lg-1" class="zoom" onmouseover="atv3lg1()" onmouseout="xatv3lg1()">
+                    <img src="img/Atividades/trabaidevitin.png" alt="Trabalho" width="200px" id="foto4lg-1" class="zoom" onmouseover="atv4lg1()" onmouseout="xatv4lg1()">
+                    <img src="img/Atividades/iskeite.jpeg" alt="Trabalho" width="200px" id="foto5lg-1" class="zoom" onmouseover="atv5lg1()" onmouseout="xatv5lg1()">
+                    <img src="img/Atividades/" alt="Trabalho" width="200px" id="foto6lg-1" class="zoom" onmouseover="atv6lg1()" onmouseout="xatv6lg1()">
+                    <div class="quadradoconteudo" id="atv1lg1">
+                        <p id="quadradoconteudopartepreta">- Carnaval SESI -<br><br>Esse dia foi destinado à confecção dos instrumentos e etandarte para o evento de carnaval do SESI.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv2lg1">
+                        <p id="quadradoconteudopartepreta">- Júri Simulado -<br><br>Esta foi uma atividade onde simulados um tribunal sobre a redução da maioridade penal.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv3lg1">
+                        <p id="quadradoconteudopartepreta">- Os Memes -<br><br>Esta foi uma atividade onde gravamos um video sobre memes e falamos como eles são uma forma de linguagem.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv4lg1">
+                        <p id="quadradoconteudopartepreta">- Teatro Simples -<br><br>Neste dia, apresentamos, por meio de uma breve peça, um livro de Ana maria Gonçalves.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv5lg1">
+                        <p id="quadradoconteudopartepreta">- Andando de Skate -<br><br>Nesta aula, o professor ensinou alguns alunos a andar de skate na quadra da escola.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv6lg1">
+                        <p id="quadradoconteudopartepreta">- Mapa mental -<br><br>Nesta aula, o professor pediu para que fizéssemos um mapa mental sobre o trabalho humano.</p>
+                    </div>
+            </div>
+            <div id="midiapv1">
+                    <img src="img/Atividades/cartafuturo.jpeg" alt="Trabalho" width="200px" id="foto1pv-1" class="zoom" onmouseover="atv1pv1()" onmouseout="xatv1pv1()">
+                    <img src="img/Atividades/timeline.png" alt="Trabalho" width="200px" id="foto2pv-1" class="zoom" onmouseover="atv2pv1()" onmouseout="xatv2pv1()">
+                    <img src="img/Atividades/minhaorbita.jpeg" alt="Trabalho" width="200px" id="foto3pv-1" class="zoom" onmouseover="atv3pv1()" onmouseout="xatv3pv1()">
+                    <img src="img/Atividades/pqnpriincp.jpeg" alt="Trabalho" width="200px" id="foto4pv-1" class="zoom" onmouseover="atv4pv1()" onmouseout="xatv4pv1()">
+                    <img src="img/Atividades/ikigai.jpeg" alt="Trabalho" width="200px" id="foto5pv-1" class="zoom" onmouseover="atv5pv1()" onmouseout="xatv5pv1()">
+                    <img src="img/Atividades/" alt="Trabalho" width="200px" id="foto6pv-1" class="zoom" onmouseover="atv6pv1()" onmouseout="xatv6pv1()">
+                    <div class="quadradoconteudo" id="atv1pv1">
+                        <p id="quadradoconteudopartepreta">- Carta do Futuro-<br><br>Essa foi uma atividade bem confusa, pois precisamos fazer uma carta do 'eu do futuro' para o 'eu do presente'.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv2pv1">
+                        <p id="quadradoconteudopartepreta">- Linha do Tempo -<br><br>Nesse dia, fizemos uma linha do tempo sobre a nossa vida, destacando acontecimentos importantes.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv3pv1">
+                        <p id="quadradoconteudopartepreta">- Minha Jornada -<br><br>Na referida data, apresentamos uma espécie de 'Sobre Mim', contando sobre inspirações e objetivos.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv4pv1">
+                        <p id="quadradoconteudopartepreta">- Leitura de Livro -<br><br>Nessa aula, o professor Wollace leu o lívro 'O Pequeno Príncipe' junto com a sala.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv5pv1">
+                        <p id="quadradoconteudopartepreta">- Ikigai -<br><br>Essa foi a atividade Ikigai, onde tivemos que fazer as intersecção entre os pontos em destaque.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv6pv1">
+                        <p id="quadradoconteudopartepreta">- Mapa mental -<br><br>Nesta aula, o professor pediu para que fizéssemos um mapa mental sobre o trabalho humano.</p>
+                    </div>
+            </div>
+            <div id="midiasn1">
+                    <img src="img/Atividades/SENAI" alt="Sem atividades registradas" width="200px" id="foto1sn-1" class="zoom" onmouseover="atv1sn1()" onmouseout="xatv1sn1()">
+                    <img src="img/Atividades/SENAI" alt="Sem atividades registradas" width="200px" id="foto2sn-1" class="zoom" onmouseover="atv2sn1()" onmouseout="xatv2sn1()">
+                    <img src="img/Atividades/SENAI" alt="Sem atividades registradas" width="200px" id="foto3sn-1" class="zoom" onmouseover="atv3sn1()" onmouseout="xatv3sn1()">
+                    <img src="img/Atividades/SENAI" alt="Sem atividades registradas" width="200px" id="foto4sn-1" class="zoom" onmouseover="atv4sn1()" onmouseout="xatv4sn1()">
+                    <img src="img/Atividades/garrafa.jpeg" alt="Trabalho" width="200px" id="foto5sn-1" class="zoom" onmouseover="atv5sn1()" onmouseout="xatv5sn1()">
+                    <img src="img/Atividades/" alt="Trabalho" width="200px" id="foto6sn-1" class="zoom" onmouseover="atv6sn1()" onmouseout="xatv6sn1()">
+                    <div class="quadradoconteudo" id="atv1sn1">
+                        <p id="quadradoconteudopartepreta">- Sem atividade -<br><br>Neste bimestre, não tivemos conteúdo.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv2sn1">
+                        <p id="quadradoconteudopartepreta">- Sem atividade -<br><br>Neste bimestre, não tivemos conteúdo.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv3sn1">
+                        <p id="quadradoconteudopartepreta">- Sem atividade -<br><br>Neste bimestre, não tivemos conteúdo.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv4sn1">
+                        <p id="quadradoconteudopartepreta">- Sem atividade -<br><br>Neste bimestre, não tivemos conteúdo.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv5sn1">
+                        <p id="quadradoconteudopartepreta">- Sustentabilidade -<br><br>Essa foi nossa primeira atividade cursando o intinerário de automação industrial, onde criamos itens úteis e sustentáveis.</p>
+                    </div>
+                    <div class="quadradoconteudo" id="atv6sn1">
+                        <p id="quadradoconteudopartepreta">- Mapa mental -<br><br>Nesta aula, o professor pediu para que fizéssemos um mapa mental sobre o trabalho humano.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="segundoano">
+            <div id="intro2">
+                <video src="video/intronether.mp4" id="intron" paused></video>
+            </div>
+            <h1 style="z-index: 10; color: white;">Sem recursos para continuar</h1>
+            <button onclick="voltardosa()" class="return" id="voltardosa">x</button>
+        </div>
+
+
+        <div id="terceiroano">
+            <div id="intro3">
+                <video src="video/introend.mp4" id="introe" paused></video>
+            </div>
+            <h1 style="z-index: 10; color: white;">Sem recursos para continuar</h1>
+            <button onclick="voltardota()" class="return" id="voltardota">x</button>
+        </div>
+
+
+
+
+        </div>
+            <button id="invisivel1" onclick="atvlupa()" onmouseover="mostrari1()" onmouseout="tirari1()"></button>
+                <p id="i1">Ciências Humanas</p>
+            <button id="invisivel2" onclick="atvpocao()" onmouseover="mostrari2()" onmouseout="tirari2()"></button>
+                <p id="i2">Ciências da Natureza</p>
+            <button id="invisivel3" onclick="atvredstone()" onmouseover="mostrari3()" onmouseout="tirari3()"></button>
+                <p id="i3">Matemática</p>
+            <button id="invisivel4" onclick="atvlivro()" onmouseover="mostrari4()" onmouseout="tirari4()"></button>
+                <p id="i4">Linguagens</p>
+            <button id="invisivel5" onclick="atvestrela()" onmouseover="mostrari5()" onmouseout="tirari5()"></button>
+                <p id="i5">Projeto de Vida</p>
+            <button id="invisivel6" onclick="atvbau()" onmouseover="mostrari6()" onmouseout="tirari6()"></button>
+                <p id="i6">SENAI</p>
+        </div>
+
+
+
+
+        <audio id="click" src="audio/minecraft_click (mp3cut.net).mp3"></audio>
+        <audio id="somtransicao1" src="audio/overworld.sound.effect.mp3"></audio>
+        <audio id="somtransicao2" src="audio/nether.sound.effect.mp3"></audio>
+        <audio id="somtransicao3" src="audio/end.sound.effect.mp3"></audio>
+        </body>
+</html>
